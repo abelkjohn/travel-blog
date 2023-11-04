@@ -2,26 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    margin: 0;
+    font-family: Inter;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    background-color: #F55A5A;
+    color: white;
+}
+
+
+.card {
+    display: flex;
+    margin: 1em;
+    margin: 2em 1.25em;
+}
+
+
+
+.img {
+    width: 400px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location a {
+    color: grey; 
+    text-decoration: none;
+    border-bottom: 2px solid grey;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.card > * {
+    margin-left: 0.3em;
+}
+
+.card .desc {
+    margin: 0.3em;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.card h2 {
+    margin: 0;
+    margin-bottom: 0.8em;
+}
+
+.card .date {
+    margin: 0;
+}
+
+.card .location {
+    margin-bottom: -0.2em;
+}
+
+.center-element {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.add-new input {
+  border-radius: 4px;
 }
