@@ -6,7 +6,7 @@ let i = 2;
 
 const getHtml = data.map(i => {
     return (
-        <div className='flex w-full border-2 rounded-xl border-red-400 my-2 shadow-lg shadow-red-400/50'>
+        <div className='overflow-x-hidden flex w-full border-2 rounded-xl border-red-400 my-2 shadow-lg shadow-red-400/50'>
             <div className='flex m-4 gap-4 text-lg'>
                     <div className='img w-80 m-auto' style={{backgroundImage: `url(${i.imageUrl})`}}></div>
                     <div className='flex flex-col justify-center p-4'>

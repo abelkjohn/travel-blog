@@ -9,7 +9,7 @@ export default function AddNew(){
         document.getElementById('add-new').style.display = 'none'
     }
     return (
-            <div id='add-new' className="bg-white add-new fixed flex flex-col center-element w-96 h-max border-2 shadow-lg shadow-red-400 border-red-400 rounded-xl overflow-hidden">
+            <div id='add-new' className="hidden bg-white add-new fixed flex-col center-element w-96 h-max border-2 shadow-lg shadow-red-400 border-red-400 rounded-xl overflow-hidden">
                 <div className=" flex justify-between bg-red-500 shadow-lg shadow-red-400/50 text-white p-3">
                     <h1 className="font-bold text-lg">Add Trip Details: </h1>
                     <div onClick={close} className="text-3xl"><FaWindowClose /></div>
